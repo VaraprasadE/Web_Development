@@ -70,21 +70,26 @@
             <div class="free"> 
               <center><h3>Contact Us</h3></center>
               
-              <form class="quote">
+              <form action="insert.php" method="post" class="quote">
                 <label>Name</label><br>
-                <input type="text" placeholder="Name.."><br><br>
+                <input type="text" placeholder="Name.." name="name_name"><br><br>
                 
                 
                 <label>Email..</label><br>
-                <input type="email" placeholder="Enter Email.."><br><br>
+                <input type="email" placeholder="Enter Email.." name="email_email"><br><br>
                 
                 <label>Message</label><br>
-                <textarea placeholder="Enter the message"></textarea><br><br>
-                <center><button type="submit" class="button">Submit</button></center>
+                <textarea placeholder="Enter the message" name="m_message"></textarea><br><br>
+                <center><button type="submit" class="button" value="Submit">Submit</button></center>
               </form>       
             </div>
           </aside>
         </div>
+        <!-- <script>
+            if (isset($_POST['submit'])) {
+                echo "Submitted Succesfully";
+            }
+        </script> -->
       </section> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
       <footer> 
